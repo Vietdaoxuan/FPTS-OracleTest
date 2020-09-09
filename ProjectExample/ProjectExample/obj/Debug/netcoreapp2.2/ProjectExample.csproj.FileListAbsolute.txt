@@ -1,0 +1,14 @@
+C:\Users\fitthuctap01.FPTS\source\repos\ProjectExample\ProjectExample\bin\Debug\netcoreapp2.2\ProjectExample.deps.json
+C:\Users\fitthuctap01.FPTS\source\repos\ProjectExample\ProjectExample\bin\Debug\netcoreapp2.2\ProjectExample.runtimeconfig.json
+C:\Users\fitthuctap01.FPTS\source\repos\ProjectExample\ProjectExample\bin\Debug\netcoreapp2.2\ProjectExample.runtimeconfig.dev.json
+C:\Users\fitthuctap01.FPTS\source\repos\ProjectExample\ProjectExample\bin\Debug\netcoreapp2.2\ProjectExample.dll
+C:\Users\fitthuctap01.FPTS\source\repos\ProjectExample\ProjectExample\bin\Debug\netcoreapp2.2\ProjectExample.pdb
+C:\Users\fitthuctap01.FPTS\source\repos\ProjectExample\ProjectExample\obj\Debug\netcoreapp2.2\ProjectExample.csprojAssemblyReference.cache
+C:\Users\fitthuctap01.FPTS\source\repos\ProjectExample\ProjectExample\obj\Debug\netcoreapp2.2\ProjectExample.csproj.CoreCompileInputs.cache
+C:\Users\fitthuctap01.FPTS\source\repos\ProjectExample\ProjectExample\obj\Debug\netcoreapp2.2\ProjectExample.RazorAssemblyInfo.cache
+C:\Users\fitthuctap01.FPTS\source\repos\ProjectExample\ProjectExample\obj\Debug\netcoreapp2.2\ProjectExample.RazorAssemblyInfo.cs
+C:\Users\fitthuctap01.FPTS\source\repos\ProjectExample\ProjectExample\obj\Debug\netcoreapp2.2\ProjectExample.AssemblyInfoInputs.cache
+C:\Users\fitthuctap01.FPTS\source\repos\ProjectExample\ProjectExample\obj\Debug\netcoreapp2.2\ProjectExample.AssemblyInfo.cs
+C:\Users\fitthuctap01.FPTS\source\repos\ProjectExample\ProjectExample\obj\Debug\netcoreapp2.2\ProjectExample.RazorTargetAssemblyInfo.cache
+C:\Users\fitthuctap01.FPTS\source\repos\ProjectExample\ProjectExample\obj\Debug\netcoreapp2.2\ProjectExample.dll
+C:\Users\fitthuctap01.FPTS\source\repos\ProjectExample\ProjectExample\obj\Debug\netcoreapp2.2\ProjectExample.pdb
