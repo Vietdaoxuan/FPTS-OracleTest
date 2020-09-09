@@ -3611,11 +3611,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fitthuctap01.FPTS\\Desktop\\ProjectExample\\CoreLib\\CoreLib.csproj",
+      "projectUniqueName": "C:\\Users\\fitthuctap01.FPTS\\Desktop\\FPTS-OracleTest\\ProjectExample\\CoreLib\\CoreLib.csproj",
       "projectName": "CoreLib",
-      "projectPath": "C:\\Users\\fitthuctap01.FPTS\\Desktop\\ProjectExample\\CoreLib\\CoreLib.csproj",
+      "projectPath": "C:\\Users\\fitthuctap01.FPTS\\Desktop\\FPTS-OracleTest\\ProjectExample\\CoreLib\\CoreLib.csproj",
       "packagesPath": "C:\\Users\\fitthuctap01.FPTS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fitthuctap01.FPTS\\Desktop\\ProjectExample\\CoreLib\\obj\\",
+      "outputPath": "C:\\Users\\fitthuctap01.FPTS\\Desktop\\FPTS-OracleTest\\ProjectExample\\CoreLib\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

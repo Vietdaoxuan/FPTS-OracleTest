@@ -13987,6 +13987,7 @@
       "CoreLib >= 1.0.0",
       "DataServiceLib >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.2.0",
+      "Microsoft.AspNetCore.Cors >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.NETCore.App >= 2.2.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.2.3"
@@ -13999,11 +14000,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fitthuctap01.FPTS\\Desktop\\ProjectExample\\ProjectAPI\\ProjectAPI.csproj",
+      "projectUniqueName": "C:\\Users\\fitthuctap01.FPTS\\Desktop\\FPTS-OracleTest\\ProjectExample\\ProjectAPI\\ProjectAPI.csproj",
       "projectName": "ProjectAPI",
-      "projectPath": "C:\\Users\\fitthuctap01.FPTS\\Desktop\\ProjectExample\\ProjectAPI\\ProjectAPI.csproj",
+      "projectPath": "C:\\Users\\fitthuctap01.FPTS\\Desktop\\FPTS-OracleTest\\ProjectExample\\ProjectAPI\\ProjectAPI.csproj",
       "packagesPath": "C:\\Users\\fitthuctap01.FPTS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fitthuctap01.FPTS\\Desktop\\ProjectExample\\ProjectAPI\\obj\\",
+      "outputPath": "C:\\Users\\fitthuctap01.FPTS\\Desktop\\FPTS-OracleTest\\ProjectExample\\ProjectAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -14022,11 +14023,11 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\fitthuctap01.FPTS\\Desktop\\ProjectExample\\CoreLib\\CoreLib.csproj": {
-              "projectPath": "C:\\Users\\fitthuctap01.FPTS\\Desktop\\ProjectExample\\CoreLib\\CoreLib.csproj"
+            "C:\\Users\\fitthuctap01.FPTS\\Desktop\\FPTS-OracleTest\\ProjectExample\\CoreLib\\CoreLib.csproj": {
+              "projectPath": "C:\\Users\\fitthuctap01.FPTS\\Desktop\\FPTS-OracleTest\\ProjectExample\\CoreLib\\CoreLib.csproj"
             },
-            "C:\\Users\\fitthuctap01.FPTS\\Desktop\\ProjectExample\\DataServiceLib\\DataServiceLib.csproj": {
-              "projectPath": "C:\\Users\\fitthuctap01.FPTS\\Desktop\\ProjectExample\\DataServiceLib\\DataServiceLib.csproj"
+            "C:\\Users\\fitthuctap01.FPTS\\Desktop\\FPTS-OracleTest\\ProjectExample\\DataServiceLib\\DataServiceLib.csproj": {
+              "projectPath": "C:\\Users\\fitthuctap01.FPTS\\Desktop\\FPTS-OracleTest\\ProjectExample\\DataServiceLib\\DataServiceLib.csproj"
             }
           }
         }
@@ -14045,6 +14046,10 @@
             "target": "Package",
             "version": "[2.2.0, )",
             "autoReferenced": true
+          },
+          "Microsoft.AspNetCore.Cors": {
+            "target": "Package",
+            "version": "[2.2.0, )"
           },
           "Microsoft.AspNetCore.Razor.Design": {
             "suppressParent": "All",

@@ -32,8 +32,15 @@ namespace ProjectAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            
+
             services.AddDataServices();
             services.AddTransient<ICommon, Common>();
+
+            services.AddCors(c =>
+            {
+                c.AddPolicy("AllowOrigin", options => options.WithOrigins("https://localhost:44344"));
+            });
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
@@ -41,6 +48,7 @@ namespace ProjectAPI
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -52,6 +60,8 @@ namespace ProjectAPI
             }
 
             app.UseHttpsRedirection();
+            app.UseCors(options => options.WithOrigins("https://localhost:44344"));
+            
             app.UseMvc();
         }
     }

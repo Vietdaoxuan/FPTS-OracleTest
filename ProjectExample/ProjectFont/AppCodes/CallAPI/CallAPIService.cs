@@ -16,15 +16,15 @@ namespace ProjectFont.AppCodes.CallAPI
     {
         #region snippet_HttpClient
 
-        public static HttpClient client = new HttpClient();
-        private readonly IConfiguration _config;
+        public static HttpClient client = new HttpClient();        
         public static string APILINK = "http://localhost:44301";
 
-        public CallAPIService(IConfiguration config)
-        {
-            this._config = config;
-           //APILINK = this._config["ApiUrl"];
-        }
+        //private readonly IConfiguration _config;
+        //public CallAPIService(IConfiguration config)
+        //{
+        //    this._config = config;
+        //   //APILINK = this._config["ApiUrl"];
+        //}
 
         #endregion snippet_HttpClient
 

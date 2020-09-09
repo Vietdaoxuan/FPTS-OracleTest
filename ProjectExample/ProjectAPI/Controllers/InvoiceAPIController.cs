@@ -7,6 +7,7 @@ using CoreLib.Config;
 using CoreLib.DataTableToObject.Mapping;
 using CoreLib.Entities;
 using DataServiceLib.Interfaces.Invoices;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json.Linq;
@@ -15,6 +16,7 @@ namespace ProjectAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [EnableCors("AllowOrigin")]
     public class InvoiceAPIController : ControllerBase
     {
         private readonly IInvoiceContext _invoiceContext;
@@ -23,7 +25,7 @@ namespace ProjectAPI.Controllers
         {
             this._invoiceContext = invoiceContext;
         }
-
+   
         [HttpGet(ApiRoute.Invoices)]
         public JToken GetInvoicesJToken(int invoiceID, string company)
         {

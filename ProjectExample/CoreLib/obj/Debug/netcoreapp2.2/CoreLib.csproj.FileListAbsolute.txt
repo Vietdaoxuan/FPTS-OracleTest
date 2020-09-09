@@ -24,3 +24,12 @@ C:\Users\fitthuctap01.FPTS\Desktop\ProjectExample\CoreLib\obj\Debug\netcoreapp2.
 C:\Users\fitthuctap01.FPTS\Desktop\ProjectExample\CoreLib\obj\Debug\netcoreapp2.2\CoreLib.AssemblyInfo.cs
 C:\Users\fitthuctap01.FPTS\Desktop\ProjectExample\CoreLib\obj\Debug\netcoreapp2.2\CoreLib.dll
 C:\Users\fitthuctap01.FPTS\Desktop\ProjectExample\CoreLib\obj\Debug\netcoreapp2.2\CoreLib.pdb
+C:\Users\fitthuctap01.FPTS\Desktop\FPTS-OracleTest\ProjectExample\CoreLib\bin\Debug\netcoreapp2.2\CoreLib.deps.json
+C:\Users\fitthuctap01.FPTS\Desktop\FPTS-OracleTest\ProjectExample\CoreLib\bin\Debug\netcoreapp2.2\CoreLib.dll
+C:\Users\fitthuctap01.FPTS\Desktop\FPTS-OracleTest\ProjectExample\CoreLib\bin\Debug\netcoreapp2.2\CoreLib.pdb
+C:\Users\fitthuctap01.FPTS\Desktop\FPTS-OracleTest\ProjectExample\CoreLib\obj\Debug\netcoreapp2.2\CoreLib.csprojAssemblyReference.cache
+C:\Users\fitthuctap01.FPTS\Desktop\FPTS-OracleTest\ProjectExample\CoreLib\obj\Debug\netcoreapp2.2\CoreLib.csproj.CoreCompileInputs.cache
+C:\Users\fitthuctap01.FPTS\Desktop\FPTS-OracleTest\ProjectExample\CoreLib\obj\Debug\netcoreapp2.2\CoreLib.AssemblyInfoInputs.cache
+C:\Users\fitthuctap01.FPTS\Desktop\FPTS-OracleTest\ProjectExample\CoreLib\obj\Debug\netcoreapp2.2\CoreLib.AssemblyInfo.cs
+C:\Users\fitthuctap01.FPTS\Desktop\FPTS-OracleTest\ProjectExample\CoreLib\obj\Debug\netcoreapp2.2\CoreLib.dll
+C:\Users\fitthuctap01.FPTS\Desktop\FPTS-OracleTest\ProjectExample\CoreLib\obj\Debug\netcoreapp2.2\CoreLib.pdb

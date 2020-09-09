@@ -7265,11 +7265,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fitthuctap01.FPTS\\Desktop\\ProjectExample\\CommonLib\\CommonLib.csproj",
+      "projectUniqueName": "C:\\Users\\fitthuctap01.FPTS\\Desktop\\FPTS-OracleTest\\ProjectExample\\CommonLib\\CommonLib.csproj",
       "projectName": "CommonLib",
-      "projectPath": "C:\\Users\\fitthuctap01.FPTS\\Desktop\\ProjectExample\\CommonLib\\CommonLib.csproj",
+      "projectPath": "C:\\Users\\fitthuctap01.FPTS\\Desktop\\FPTS-OracleTest\\ProjectExample\\CommonLib\\CommonLib.csproj",
       "packagesPath": "C:\\Users\\fitthuctap01.FPTS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fitthuctap01.FPTS\\Desktop\\ProjectExample\\CommonLib\\obj\\",
+      "outputPath": "C:\\Users\\fitthuctap01.FPTS\\Desktop\\FPTS-OracleTest\\ProjectExample\\CommonLib\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -7288,8 +7288,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\fitthuctap01.FPTS\\Desktop\\ProjectExample\\CoreLib\\CoreLib.csproj": {
-              "projectPath": "C:\\Users\\fitthuctap01.FPTS\\Desktop\\ProjectExample\\CoreLib\\CoreLib.csproj"
+            "C:\\Users\\fitthuctap01.FPTS\\Desktop\\FPTS-OracleTest\\ProjectExample\\CoreLib\\CoreLib.csproj": {
+              "projectPath": "C:\\Users\\fitthuctap01.FPTS\\Desktop\\FPTS-OracleTest\\ProjectExample\\CoreLib\\CoreLib.csproj"
             }
           }
         }

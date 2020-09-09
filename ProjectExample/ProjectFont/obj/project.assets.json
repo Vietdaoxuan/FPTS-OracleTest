@@ -14549,11 +14549,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fitthuctap01.FPTS\\Desktop\\ProjectExample\\ProjectFont\\ProjectFont.csproj",
+      "projectUniqueName": "C:\\Users\\fitthuctap01.FPTS\\Desktop\\FPTS-OracleTest\\ProjectExample\\ProjectFont\\ProjectFont.csproj",
       "projectName": "ProjectFont",
-      "projectPath": "C:\\Users\\fitthuctap01.FPTS\\Desktop\\ProjectExample\\ProjectFont\\ProjectFont.csproj",
+      "projectPath": "C:\\Users\\fitthuctap01.FPTS\\Desktop\\FPTS-OracleTest\\ProjectExample\\ProjectFont\\ProjectFont.csproj",
       "packagesPath": "C:\\Users\\fitthuctap01.FPTS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fitthuctap01.FPTS\\Desktop\\ProjectExample\\ProjectFont\\obj\\",
+      "outputPath": "C:\\Users\\fitthuctap01.FPTS\\Desktop\\FPTS-OracleTest\\ProjectExample\\ProjectFont\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -14572,11 +14572,11 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\fitthuctap01.FPTS\\Desktop\\ProjectExample\\CommonLib\\CommonLib.csproj": {
-              "projectPath": "C:\\Users\\fitthuctap01.FPTS\\Desktop\\ProjectExample\\CommonLib\\CommonLib.csproj"
+            "C:\\Users\\fitthuctap01.FPTS\\Desktop\\FPTS-OracleTest\\ProjectExample\\CommonLib\\CommonLib.csproj": {
+              "projectPath": "C:\\Users\\fitthuctap01.FPTS\\Desktop\\FPTS-OracleTest\\ProjectExample\\CommonLib\\CommonLib.csproj"
             },
-            "C:\\Users\\fitthuctap01.FPTS\\Desktop\\ProjectExample\\CoreLib\\CoreLib.csproj": {
-              "projectPath": "C:\\Users\\fitthuctap01.FPTS\\Desktop\\ProjectExample\\CoreLib\\CoreLib.csproj"
+            "C:\\Users\\fitthuctap01.FPTS\\Desktop\\FPTS-OracleTest\\ProjectExample\\CoreLib\\CoreLib.csproj": {
+              "projectPath": "C:\\Users\\fitthuctap01.FPTS\\Desktop\\FPTS-OracleTest\\ProjectExample\\CoreLib\\CoreLib.csproj"
             }
           }
         }
