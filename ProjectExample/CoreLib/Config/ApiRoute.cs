@@ -15,10 +15,10 @@ namespace CoreLib.Config
         public const string DeleteEmployees = "/api/Delete-Employees";
 
         // API for Invoice
-        public const string Invoices = "api/Search-Invoices";
-        public const string InvoicesDataSet = "api/Search-Invoices-DataSet";
-        public const string InsertInvoices = "api/Insert-Invoices";
-        public const string UpdateInvoices = "api/Update-Invoices";
-        public const string DeleteInvoices = "api/Delete-Invoices";
+        public const string Invoices = "/api/Search-Invoices";
+        public const string InvoicesDataSet = "/api/Search-Invoices-DataSet";
+        public const string InsertInvoices = "/api/Insert-Invoices";
+        public const string UpdateInvoices = "/api/Update-Invoices";
+        public const string DeleteInvoices = "/api/Delete-Invoices";
     }
 }
