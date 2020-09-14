@@ -20,6 +20,8 @@ namespace CoreLib.Config
 
         public const string SP_KIENPC_SEARCH_INVOICES = "kienpc_search_Invoices";
 
+        public const string SP_TUNGTT_SUMMARY_REPORT_INVOICES = "tungtt_invoice_summary_report";
+
 
     }
 }
