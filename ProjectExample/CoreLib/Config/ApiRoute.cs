@@ -20,5 +20,8 @@ namespace CoreLib.Config
         public const string InsertInvoices = "api/Insert-Invoices";
         public const string UpdateInvoices = "api/Update-Invoices";
         public const string DeleteInvoices = "api/Delete-Invoices";
+
+        // Seller
+        public const string Sellers = "api/Search-Sellers";
     }
 }

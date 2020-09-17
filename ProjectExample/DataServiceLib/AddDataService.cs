@@ -2,11 +2,11 @@
 using DataServiceLib.Implementations;
 using DataServiceLib.Implementations.Employees;
 using DataServiceLib.Implementations.Invoices;
-using DataServiceLib.Implementations.Seller;
+using DataServiceLib.Implementations.Sellers;
 using DataServiceLib.Interfaces;
 using DataServiceLib.Interfaces.Employees;
 using DataServiceLib.Interfaces.Invoices;
-using DataServiceLib.Interfaces.Seller;
+using DataServiceLib.Interfaces.Sellers;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace DataServiceLib

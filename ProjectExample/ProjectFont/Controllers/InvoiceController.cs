@@ -45,7 +45,7 @@ namespace ProjectFont.Controllers
         public async Task<JsonResult> Get()
         {
             string prm = "?invoiceID=1&company=";
-            var result = await CallAPIService.SearchTemplateAsync(ApiRoute.Invoices + prm);
+            var result = await CallAPIService.SearchTemplateAsync(ApiRoute.Sellers + prm);
             var jsonCode = JsonConvert.SerializeObject(result);
             return Json(jsonCode);
         }
