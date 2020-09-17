@@ -8,10 +8,6 @@ namespace DataServiceLib.Interfaces.Sellers
 {
     public interface ISellerContext : IDataContext<Seller>
     {
-        DataSet Get(Seller searchOptions);
 
-        DataSet Get(string SellerId);
-
-        ResponseMessage Delete(string SellerId);
     }
 }

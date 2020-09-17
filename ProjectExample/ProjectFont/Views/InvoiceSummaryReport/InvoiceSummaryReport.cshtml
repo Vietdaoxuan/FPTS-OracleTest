@@ -1,0 +1,119 @@
+﻿@model IEnumerable<CoreLib.Entities.InvoiceSummaryReport>
+
+@{
+    ViewData["Title"] = "InvoiceSummaryReport";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<p>
+    <a asp-action="Create">Báo Cáo</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FormNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Symbol)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InvoiceCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TransDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Company)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TaxCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Point)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quantity)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FormNo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Symbol)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.InvoiceCode)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TransDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Company)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TaxCode)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProductName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Point)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Quantity)
+                </td>
+
+                @*<td>
+                        @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                        @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                        @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                    </td>*@
+                @*<td>
+                        <input type="button" value="Xuất báo cáo" id="btnXuatBaoCao" />
+                    </td>*@
+            </tr>
+        }
+    </tbody>
+
+</table>
+<input type="button" value="Xuất báo cáo" id="btnXuatBaoCao" />
+<script type="text/javascript">
+    $('body').on('click', '#btnXuatBaoCao', () => {
+
+        console.log('thanh cong');
+
+        $.ajax({
+            type: "GET",
+            url: 'InvoiceSummaryReportController/Get',
+            dataType: "json",
+            data: {
+                sellerID: 1,
+
+            },
+            success: function (res) {
+                var response = JSON.parse(res);
+                console.log(response);
+            },
+            error: function (err) {
+                console.log(err);
+            }
+        });
+    });
+</script>
+

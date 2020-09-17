@@ -17,7 +17,7 @@ namespace ProjectFont.AppCodes.CallAPI
         #region snippet_HttpClient
 
         public static HttpClient client = new HttpClient();        
-        public static string APILINK = "http://localhost:44301";
+        public static string APILINK = "http://localhost:52739";
 
         //private readonly IConfiguration _config;
         //public CallAPIService(IConfiguration config)
