@@ -32,13 +32,13 @@ namespace ProjectFont.Controllers
             return View(list);
             
         }
-        public async Task<JsonResult> Get()
-        {
-            string prm = "?sellerID=1";
-            var result = await CallAPIService.SearchTemplateAsync(ApiRoute.InvoiceSummaryReport + prm);
-            var jsonCode = JsonConvert.SerializeObject(result);
-            return Json(jsonCode);
-        }
+        //public async Task<JsonResult> Get()
+        //{
+        //    string prm = "?sellerID=1";
+        //    var result = await CallAPIService.SearchTemplateAsync(ApiRoute.InvoiceSummaryReport + prm);
+        //    var jsonCode = JsonConvert.SerializeObject(result);
+        //    return Json(jsonCode);
+        //}
 
         //public IActionResult ExportReport(int formType)
         //{
