@@ -60,7 +60,7 @@ namespace ProjectFont
             app.UseMvc(routes => {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Invoice}/{action=Index}/{id?}"
+                    template: "{controller=Seller}/{action=Index}/{id?}"
                     );
             });
         }

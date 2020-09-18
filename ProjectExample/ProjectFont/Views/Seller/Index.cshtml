@@ -1,0 +1,123 @@
+﻿@model IEnumerable<CoreLib.Entities.Seller>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.SellerID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SellerName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tax)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Phone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Fax)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Owners)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AccountNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AccountName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BankName)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @*@foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.SellerID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SellerName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tax)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Phone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fax)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Owners)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AccountNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AccountName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BankName)
+            </td>
+
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+            <td>
+                <input type="button" value="Bấm" id="btnBam" />
+            </td>
+        </tr>
+        }*@
+    </tbody>
+</table>
+<script type="text/javascript">
+    $('body').on('click', '#btnBam', () => {
+
+
+        console.log('aaaaaaaaa');
+        var seller = {
+            
+        }
+        $.ajax({
+            type: "GET",
+            url: 'Seller/Get',
+            dataType: "json",
+            data: 
+            success: function (res) {
+                var response = JSON.parse(res);
+                console.log(response);
+            },
+            error: function (err) {
+                console.log(err);
+            }
+        });
+    });
+</script>
