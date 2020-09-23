@@ -12,15 +12,18 @@ namespace ProjectFont.Controllers
 {
     public class SellerController : Controller
     {
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            string prm = "";
+            var result = await CallAPIService.SearchTemplateAsync(ApiRoute.Sellers + prm);
+            var jsonCode = JsonConvert.SerializeObject(result);
+            return View(jsonCode);
         }
 
         public async Task<JsonResult> Get(Seller searchOptions)
         {
             string prm = "";
-            var result = await CallAPIService.SearchTemplateAsync(ApiRoute.Invoices + prm);
+            var result = await CallAPIService.SearchTemplateAsync(ApiRoute.Sellers + prm);
             var jsonCode = JsonConvert.SerializeObject(result);
             return Json(jsonCode);
         }

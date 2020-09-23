@@ -33,13 +33,13 @@ namespace DataServiceLib.Implementations.Sellers
         {
             var paramArr = new[]
             {
-                new OracleParameter()
-                {
-                    ParameterName = "P_SellerID",
-                    Direction = ParameterDirection.Input,
-                    OracleDbType = OracleDbType.Int64,
-                    Value = searchOptions.SellerID,
-                },
+                //new OracleParameter()
+                //{
+                //    ParameterName = "P_SellerID",
+                //    Direction = ParameterDirection.Input,
+                //    OracleDbType = OracleDbType.Int64,
+                //    Value = searchOptions.SellerID,
+                //},
                 new OracleParameter()
                 {
                     ParameterName = "P_SellerName",
@@ -47,76 +47,76 @@ namespace DataServiceLib.Implementations.Sellers
                     OracleDbType = OracleDbType.Varchar2,
                     Value = searchOptions.SellerName,
                 },
-                new OracleParameter()
-                {
-                    ParameterName = "P_Tax",
-                    Direction = ParameterDirection.Input,
-                    OracleDbType = OracleDbType.Varchar2,
-                    Value = searchOptions.Tax,
-                },
-                new OracleParameter()
-                {
-                    ParameterName = "P_Address",
-                    Direction = ParameterDirection.Input,
-                    OracleDbType = OracleDbType.Varchar2,
-                    Value = searchOptions.Address,
-                },
-                new OracleParameter()
-                {
-                    ParameterName = "P_Phone",
-                    Direction = ParameterDirection.Input,
-                    OracleDbType = OracleDbType.Varchar2,
-                    Value = searchOptions.Phone,
-                },
-                new OracleParameter()
-                {
-                    ParameterName = "P_Email",
-                    Direction = ParameterDirection.Input,
-                    OracleDbType = OracleDbType.Varchar2,
-                    Value = searchOptions.Email,
-                },
-                new OracleParameter()
-                {
-                    ParameterName = "P_Fax",
-                    Direction = ParameterDirection.Input,
-                    OracleDbType = OracleDbType.Varchar2,
-                    Value = searchOptions.Fax,
-                },
-                new OracleParameter()
-                {
-                    ParameterName = "P_AccountNumber",
-                    Direction = ParameterDirection.Input,
-                    OracleDbType = OracleDbType.Varchar2,
-                    Value = searchOptions.AccountNumber,
-                },
-                new OracleParameter()
-                {
-                    ParameterName = "P_AccountName",
-                    Direction = ParameterDirection.Input,
-                    OracleDbType = OracleDbType.Varchar2,
-                    Value = searchOptions.AccountName,
-                },
-                new OracleParameter()
-                {
-                    ParameterName = "P_BankName",
-                    Direction = ParameterDirection.Input,
-                    OracleDbType = OracleDbType.Varchar2,
-                    Value = searchOptions.BankName,
-                },
-                new OracleParameter()
-                {
-                    ParameterName = "P_UserLogin",
-                    Direction = ParameterDirection.Input,
-                    OracleDbType = OracleDbType.Varchar2,
-                    Value = null,
-                },
-                new OracleParameter()
-                {
-                    ParameterName = "P_RoleCode",
-                    Direction = ParameterDirection.Input,
-                    OracleDbType = OracleDbType.Varchar2,
-                    Value = null,
-                },
+                //new OracleParameter()
+                //{
+                //    ParameterName = "P_Tax",
+                //    Direction = ParameterDirection.Input,
+                //    OracleDbType = OracleDbType.Varchar2,
+                //    Value = searchOptions.Tax,
+                //},
+                //new OracleParameter()
+                //{
+                //    ParameterName = "P_Address",
+                //    Direction = ParameterDirection.Input,
+                //    OracleDbType = OracleDbType.Varchar2,
+                //    Value = searchOptions.Address,
+                //},
+                //new OracleParameter()
+                //{
+                //    ParameterName = "P_Phone",
+                //    Direction = ParameterDirection.Input,
+                //    OracleDbType = OracleDbType.Varchar2,
+                //    Value = searchOptions.Phone,
+                //},
+                //new OracleParameter()
+                //{
+                //    ParameterName = "P_Email",
+                //    Direction = ParameterDirection.Input,
+                //    OracleDbType = OracleDbType.Varchar2,
+                //    Value = searchOptions.Email,
+                //},
+                //new OracleParameter()
+                //{
+                //    ParameterName = "P_Fax",
+                //    Direction = ParameterDirection.Input,
+                //    OracleDbType = OracleDbType.Varchar2,
+                //    Value = searchOptions.Fax,
+                //},
+                //new OracleParameter()
+                //{
+                //    ParameterName = "P_AccountNumber",
+                //    Direction = ParameterDirection.Input,
+                //    OracleDbType = OracleDbType.Varchar2,
+                //    Value = searchOptions.AccountNumber,
+                //},
+                //new OracleParameter()
+                //{
+                //    ParameterName = "P_AccountName",
+                //    Direction = ParameterDirection.Input,
+                //    OracleDbType = OracleDbType.Varchar2,
+                //    Value = searchOptions.AccountName,
+                //},
+                //new OracleParameter()
+                //{
+                //    ParameterName = "P_BankName",
+                //    Direction = ParameterDirection.Input,
+                //    OracleDbType = OracleDbType.Varchar2,
+                //    Value = searchOptions.BankName,
+                //},
+                //new OracleParameter()
+                //{
+                //    ParameterName = "P_UserLogin",
+                //    Direction = ParameterDirection.Input,
+                //    OracleDbType = OracleDbType.Varchar2,
+                //    Value = null,
+                //},
+                //new OracleParameter()
+                //{
+                //    ParameterName = "P_RoleCode",
+                //    Direction = ParameterDirection.Input,
+                //    OracleDbType = OracleDbType.Varchar2,
+                //    Value = null,
+                //},
                 new OracleParameter()
                 {
                     ParameterName = "REFCURSOR",

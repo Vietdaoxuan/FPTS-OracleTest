@@ -49,7 +49,7 @@
         </tr>
     </thead>
     <tbody>
-        @*@foreach (var item in Model)
+        @foreach (var item in Model)
         {
         <tr>
             <td>
@@ -91,33 +91,31 @@
                 @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
                 @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
             </td>
-            <td>
-                <input type="button" value="Bấm" id="btnBam" />
-            </td>
+            
         </tr>
-        }*@
+        }
     </tbody>
 </table>
 <script type="text/javascript">
-    $('body').on('click', '#btnBam', () => {
+    //$('body').on('click', '#btnBam', () => {
 
 
-        console.log('aaaaaaaaa');
-        var seller = {
+    //    console.log('aaaaaaaaa');
+    //    var seller = {
             
-        }
-        $.ajax({
-            type: "GET",
-            url: 'Seller/Get',
-            dataType: "json",
-            data: 
-            success: function (res) {
-                var response = JSON.parse(res);
-                console.log(response);
-            },
-            error: function (err) {
-                console.log(err);
-            }
-        });
-    });
+    //    }
+    //    $.ajax({
+    //        type: "GET",
+    //        url: 'Seller/Get',
+    //        dataType: "json",
+    //        data: 
+    //        success: function (res) {
+    //            var response = JSON.parse(res);
+    //            console.log(response);
+    //        },
+    //        error: function (err) {
+    //            console.log(err);
+    //        }
+    //    });
+    //});
 </script>
