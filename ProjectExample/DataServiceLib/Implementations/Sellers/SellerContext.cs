@@ -29,23 +29,23 @@ namespace DataServiceLib.Implementations.Sellers
             throw new NotImplementedException();
         }
 
-        public DataSet Get(Seller searchOptions)
+        public DataSet Get(int sellerID, string sellerName)
         {
             var paramArr = new[]
             {
-                //new OracleParameter()
-                //{
-                //    ParameterName = "P_SellerID",
-                //    Direction = ParameterDirection.Input,
-                //    OracleDbType = OracleDbType.Int64,
-                //    Value = searchOptions.SellerID,
-                //},
+                new OracleParameter()
+                {
+                    ParameterName = "P_SellerID",
+                    Direction = ParameterDirection.Input,
+                    OracleDbType = OracleDbType.Int64,
+                    Value = sellerID,
+                },
                 new OracleParameter()
                 {
                     ParameterName = "P_SellerName",
                     Direction = ParameterDirection.Input,
                     OracleDbType = OracleDbType.Varchar2,
-                    Value = searchOptions.SellerName,
+                    Value = sellerName,
                 },
                 //new OracleParameter()
                 //{

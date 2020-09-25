@@ -97,25 +97,25 @@
     </tbody>
 </table>
 <script type="text/javascript">
-    //$('body').on('click', '#btnBam', () => {
+    $(document).ready(function () {
 
-
-    //    console.log('aaaaaaaaa');
-    //    var seller = {
-            
-    //    }
-    //    $.ajax({
-    //        type: "GET",
-    //        url: 'Seller/Get',
-    //        dataType: "json",
-    //        data: 
-    //        success: function (res) {
-    //            var response = JSON.parse(res);
-    //            console.log(response);
-    //        },
-    //        error: function (err) {
-    //            console.log(err);
-    //        }
-    //    });
-    //});
+        console.log('aaaaaaaaa');
+     
+        $.ajax({
+            type: "GET",
+            url: 'Seller/Get',
+            dataType: "json",
+            data: {
+                sellerID: 1,
+                sellerName: null,
+            },
+            success: function (res) {
+                var response = JSON.parse(res);
+                console.log(response);
+            },
+            error: function (err) {
+                console.log(err);
+            }
+        });
+    });
 </script>

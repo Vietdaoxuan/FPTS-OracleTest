@@ -12,17 +12,17 @@ namespace ProjectFont.Controllers
 {
     public class SellerController : Controller
     {
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int sellerID, string sellerName)
         {
-            string prm = "";
+            string prm = "?sellerID=" + sellerID + "&sellerName=" + sellerName;
             var result = await CallAPIService.SearchTemplateAsync(ApiRoute.Sellers + prm);
             var jsonCode = JsonConvert.SerializeObject(result);
             return View(jsonCode);
         }
 
-        public async Task<JsonResult> Get(Seller searchOptions)
+        public async Task<JsonResult> Get(int sellerID, string sellerName)
         {
-            string prm = "";
+            string prm = "?sellerID=" + sellerID + "&sellerName=" + sellerName;
             var result = await CallAPIService.SearchTemplateAsync(ApiRoute.Sellers + prm);
             var jsonCode = JsonConvert.SerializeObject(result);
             return Json(jsonCode);

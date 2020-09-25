@@ -25,9 +25,9 @@ namespace ProjectAPI.Controllers
         }
 
         [HttpGet(ApiRoute.Sellers)]
-        public JToken GetSellers(Seller searchOptions)
+        public JToken GetSellers(int sellerID, string sellerName)
         {
-            var dataSet = this._sellerContext.Get(searchOptions);
+            var dataSet = this._sellerContext.Get(sellerID, sellerName);
 
             DataTable dataTable;
 
