@@ -29,7 +29,7 @@ namespace DataServiceLib.Implementations.Sellers
             throw new NotImplementedException();
         }
 
-        public DataSet Get(int sellerID, string sellerName)
+        public DataSet Get(int? sellerID, string sellerName)
         {
             var paramArr = new[]
             {

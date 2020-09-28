@@ -33,7 +33,8 @@ namespace DataServiceLib.Implementations
         public CBaseDataProvider(IConfiguration config)
         {
             this._config = config;
-            this._connectionString = this.configuration["ConnectionString"];
+            //this._connectionString = this.configuration["ConnectionString"];
+            this._connectionString = "Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=10.26.7.23)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=tradingt)));User Id = study; Password = study123;";
             this._requiredParams = new List<OracleParameter>();
         }
 

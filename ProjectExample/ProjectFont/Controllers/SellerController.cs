@@ -22,7 +22,7 @@ namespace ProjectFont.Controllers
         {
             this._sellerContext = sellerContext;
         }
-        public async Task<IActionResult> Index(int sellerID, string sellerName)
+        public async Task<IActionResult> Index(int? sellerID = null, string sellerName = null)
         {
             var dataSet = this._sellerContext.Get(sellerID, sellerName);
             DataTable dataTable;
@@ -31,7 +31,7 @@ namespace ProjectFont.Controllers
             {
                 dataTable = dataSet.Tables[0];
                 List<Seller> listSeller = new List<Seller>();
-                for (int i = 0; i < dataSet.Tables.Count; i++)
+                for (int i = 0; i < dataTable.Rows.Count; i++)
                 {
                     Seller sellers = new Seller();
                     sellers.SellerID = Convert.ToInt32(dataTable.Rows[i]["SELLERID"]);
@@ -40,9 +40,16 @@ namespace ProjectFont.Controllers
                     sellers.AccountNumber = dataTable.Rows[i]["ACCOUNTNUMBER"].ToString();
                     sellers.Address = dataTable.Rows[i]["ADDRESS"].ToString();
                     listSeller.Add(sellers);
+                    if (listSeller.Count == 0)
+                    {
+                        return View("no result");
+                    }
                 }
-                return View(dataTable);
+                return View(listSeller);
             }
+            //string prm = "?sellerID=" + sellerID + "&sellerName=" + sellerName;
+            //var result = await CallAPIService.SearchTemplateAsync(ApiRoute.Sellers + prm);
+            //var jsonCode = JsonConvert.SerializeObject(result);
             return View();
         }
 
