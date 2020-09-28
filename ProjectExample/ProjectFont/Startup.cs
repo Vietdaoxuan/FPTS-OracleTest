@@ -1,5 +1,7 @@
 using CommonLib.Implementations;
 using CommonLib.Interfaces;
+using DataServiceLib.Implementations.Sellers;
+using DataServiceLib.Interfaces.Sellers;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -35,6 +37,8 @@ namespace ProjectFont
             services.AddTransient<IHttpService, HttpService>();
             services.AddTransient<ICommon, Common>();
             services.AddTransient<IInvoiceService, InvoiceService>();
+            services.AddTransient<ISellerService, SellerService>();
+            services.AddSingleton<ISellerContext, SellerContext>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }

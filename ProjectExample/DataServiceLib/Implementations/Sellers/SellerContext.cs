@@ -10,7 +10,7 @@ using System.Text;
 
 namespace DataServiceLib.Implementations.Sellers
 {
-    class SellerContext : ISellerContext
+    public class SellerContext : ISellerContext
     {
         private readonly ICBaseDataProvider _dataProvider;
 
