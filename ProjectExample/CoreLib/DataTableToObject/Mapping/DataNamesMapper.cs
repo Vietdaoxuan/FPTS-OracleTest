@@ -18,6 +18,7 @@ namespace CoreLib.DataTableToObject.Mapping
         public TEntity Map(DataRow row)
         {
             var entity = new TEntity();
+
             return this.Map(row, entity);
         }
 
@@ -43,6 +44,7 @@ namespace CoreLib.DataTableToObject.Mapping
             foreach (DataRow row in table.Rows)
             {
                 var entity = new TEntity();
+
                 foreach (var prop in properties)
                 {
                     PropertyMapHelper.Map(typeof(TEntity), row, prop, entity);

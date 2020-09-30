@@ -1,119 +1,134 @@
-﻿@model IEnumerable<CoreLib.Entities.InvoiceSummaryReport>
-
+﻿
+@model ProjectFont.Models.ViewModels.InvoiceSummaryReportViewModels
 @{
     ViewData["Title"] = "InvoiceSummaryReport";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<p>
-    <a asp-action="Create">Báo Cáo</a>
-</p>
+<div>
+    <input type="text" class="form-control" id="invoiceID" style="border: hidden" />
+</div>
+<div id="loading"></div>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.ID)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FormNo)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Symbol)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.InvoiceCode)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.TransDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Company)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.TaxCode)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ProductName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Point)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Quantity)
-            </th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.ID)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.FormNo)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Symbol)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.InvoiceCode)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.TransDate)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Company)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.TaxCode)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.ProductName)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Point)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Quantity)
-                </td>
-
-                @*<td>
-                        @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                        @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                        @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-                    </td>*@
-                @*<td>
-                        <input type="button" value="Xuất báo cáo" id="btnXuatBaoCao" />
-                    </td>*@
+<div class="container">
+    <table id="list" class="table table-striped table-bordered dt-responsive  col-12">
+        <thead>
+            <tr role="row">
+                <th>STT</th>
+                <th>Mẫu số</th>
+                <th>Ký hiệu hóa đơn</th>
+                <th>Số hóa đơn</th>
+                <th>Ngày tháng năm lập hóa đơn</th>
+                <th>Tên người mua</th>
+                <th>Mã số thuế/mã khách hàng</th>
+                <th>Tên hàng hóa, dịch vụ</th>
+                <th>Đơn vị tính</th>
+                <th>Số lượng hàng hóa</th>
+                <th>Tổng giá hàng hóa, dịch vụ bán ra chưa có thuế GTGT</th>
+                <th>Thuế suất thuế GTGT</th>
+                <th>Tổng số thuế GTGT</th>
+                <th>Tổng tiền thanh toán</th>
+                <th>Ghi chú</th>
             </tr>
-        }
-    </tbody>
+        </thead>
+    </table>
+</div>
 
-</table>
-<input type="button" value="Xuất báo cáo" id="btnXuatBaoCao" />
-<script type="text/javascript">
-    $('body').on('click', '#btnXuatBaoCao', () => {
+<script>
+        $(document).ready(function () {
+            var renderColumns = [
+                {
+                    data: "id"
+                },
+                {
+                    data:"formNo"
+                },
+                {
+                    data: "symBol"
+                },
+                
+                {
+                    data: "invoiceCode"
+                },
+                {
+                    data: "transDate"
+                },
+                {
+                    data: "comPany"
+                },
+                {
+                    data: "taxCode"
+                },                                                         
+                {
+                    data: "productName"
+                }, 
+                {
+                    data: "point"
+                },
+                {
+                    data: "quantity"
+                },
+                {
+                    data: "totalMoney"
+                },
+                {
+                    data: "tax"
+                },
+                {
+                    data: "amountTax"
+                },
+                {
+                    data: "amountToltal"
+                },
+                {
+                    data: "typeName"
+                },
+            ]
+            $('#loading').addClass('loading');
+            let table = $('#list').DataTable({
+                    dom: "lti<'d-flex justify-content-center'p>",
+                    columns: renderColumns,
+                    "pageLength": 50,
+                    "ordering": false,
+                    "searching": false,
+                    responsive: { details: false },
+                    columnDefs: [
+                        { responsivePriority: -1, targets: 0 },
+                        { responsivePriority: 2, targets: 1 },
+                        { responsivePriority: 3, targets: 2 },
+                        { responsivePriority: 4, targets: 3 },
+                        { responsivePriority: 5, targets: 4 },
+                        { responsivePriority: 6, targets: 5 },
+                        { responsivePriority: 7, targets: 6 },
+                        { responsivePriority: 8, targets: 7 },
+                        { responsivePriority: 9, targets: 8 },
+                        { responsivePriority: 10, targets: 9 },
+                        { responsivePriority: 11, targets: 10 },
+                        { responsivePriority: 12, targets: 11 },
+                        { responsivePriority: 13, targets: 12 },
+                        { responsivePriority: 14, targets: 13 },
 
-        console.log('thanh cong');
+                    ],
 
-        $.ajax({
-            type: "GET",
-            url: 'InvoiceSummaryReportController/Get',
-            dataType: "json",
-            data: {
-                sellerID: 1,
+                    "processing": false,
+                    "serverSide": true,
+                    "ajax": {
 
-            },
-            success: function (res) {
-                var response = JSON.parse(res);
-                console.log(response);
-            },
-            error: function (err) {
-                console.log(err);
-            }
-        });
-    });
+                        url:"@Url.Action("InvoiceSummaryReportList")",
+                        data: function (d) {
+                            $('#loading').removeClass('loading');
+                            var iD = $('#invoiceID').val();
+                            let searchUrl = `@Url.Action("InvoiceSummaryReport")?Id=${iD}`;
+                            $('#loading').removeClass('loading');
+                            return $.extend({},
+                                d, {
+                                    Id: iD
+                                });
+                        }
+                    }
+            });
+
+        })
 </script>
+
 

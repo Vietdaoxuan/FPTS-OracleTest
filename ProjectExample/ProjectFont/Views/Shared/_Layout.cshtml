@@ -7,10 +7,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>_Layout</title>
-
+    <link href="~/css/site.css" rel="stylesheet"/>
+    <link href="~/js/datatables/datatables.bundle.min.css" rel="stylesheet" />
+    <link href="~/js/StyleBunble/style.bundle.css" rel="stylesheet" />
+    <script src="~/js/jquery/jquery.min.js" type="text/javascript"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <!--Import jQuery before export.js-->
+
+  
 </head>
 <body>
     @RenderBody()
+
+    <script>
+        var KAppOptions = {
+            "colors": {
+                "state": {
+                    "brand": "#4d5cf2",
+                    "metal": "#c4c5d6",
+                    "light": "#ffffff",
+                    "accent": "#00c5dc",
+                    "primary": "#5867dd",
+                    "success": "#34bfa3",
+                    "info": "#36a3f7",
+                    "warning": "#ffb822",
+                    "danger": "#fd3995",
+                    "focus": "#9816f4"
+                },
+                "base": {
+                    "label": ["#c5cbe3", "#a1a8c3", "#3d4465", "#3e4466"],
+                    "shape": ["#f0f3ff", "#d9dffa", "#afb4d4", "#646c9a"]
+                }
+            }
+        };
+    </script>
+
+    <script src="~/js/boostrap/bootstrap.min.js" type="text/javascript"></script>
+    <script src="~/js/demo/scripts.bundle.min.js" type="text/javascript"></script>
+    <script src="~/js/sticky/sticky.min.js" type="text/javascript"></script>
+    <script src="~/js/datatables/datatables.bundle.min.js" type="text/javascript"></script>
 </body>
 </html>

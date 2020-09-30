@@ -1,5 +1,6 @@
 using CommonLib.Implementations;
 using CommonLib.Interfaces;
+using CoreLib.SharedKernel;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -14,12 +15,13 @@ namespace ProjectFont
 {
     public class Startup
     {
+        public IConfiguration Configuration { get; }
+
         public Startup(IConfiguration configuration)
         {
-            Configuration = configuration;
+            this.Configuration = configuration;
+            ConfigProvider.Configuration = configuration;
         }
-
-        public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -60,7 +62,7 @@ namespace ProjectFont
             app.UseMvc(routes => {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Invoice}/{action=Index}/{id?}"
+                    template: "{controller=InvoiceSummaryReport}/{action=InvoiceSummaryReport}/{id?}"
                     );
             });
         }

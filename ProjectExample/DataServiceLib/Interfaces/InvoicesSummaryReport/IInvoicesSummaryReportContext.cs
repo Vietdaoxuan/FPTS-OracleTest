@@ -6,8 +6,10 @@ using System.Text;
 
 namespace DataServiceLib.Interfaces.InvoicesSummaryReport
 {
-    public interface IInvoicesSummaryReportContext : IDataContext<Invoice>
+    public interface IInvoicesSummaryReportContext : IDataContext<InvoiceSummaryReport>
     {
-        DataSet Get(Invoice searchOptions);
+        DataSet Get(InvoiceSummaryReport searchOptions);
+        DataSet Get(int iD);
+
     }
 }
