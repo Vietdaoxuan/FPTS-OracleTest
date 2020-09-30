@@ -23,5 +23,7 @@ namespace CoreLib.Config
         public const string SP_TUNGTT_SUMMARY_REPORT_INVOICES = "tungtt_invoice_summary_report";
 
 
+        //Seller
+        public const string SP_SELLER_SEARCH = "SP_SELLER_SEARCH";
     }
 }

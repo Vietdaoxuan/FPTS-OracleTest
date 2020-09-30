@@ -8,6 +8,8 @@ using DataServiceLib.Interfaces;
 using DataServiceLib.Interfaces.Employees;
 using DataServiceLib.Interfaces.Invoices;
 using DataServiceLib.Interfaces.InvoicesSummaryReport;
+
+using DataServiceLib.Interfaces.Sellers;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace DataServiceLib
@@ -21,6 +23,7 @@ namespace DataServiceLib
             services.AddTransient(typeof(IInvoiceContext), typeof(InvoiceContext));
             services.AddTransient(typeof(IInvoicesSummaryReportContext), typeof(InvoicesSummaryReportContext));
             //services.AddTransient(typeof(ISellerContext), typeof(SellerContext));
+            services.AddTransient(typeof(ISellerContext), typeof(SellerContext));
             return services;
         }
     }
